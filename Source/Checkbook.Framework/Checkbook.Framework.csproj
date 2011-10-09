@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9F34985-099F-4B2F-8714-39C5A502582C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Checkbook.Framework</RootNamespace>
+    <AssemblyName>Checkbook.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\EntLib50Src\Blocks\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\EntLib50Src\Blocks\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security">
+      <HintPath>..\..\..\EntLib50Src\Blocks\bin\Release\Microsoft.Practices.EnterpriseLibrary.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\EntLib50Src\Blocks\bin\Release\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\EntLib50Src\Blocks\bin\Release\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\Account.cs" />
+    <Compile Include="DAL\AccountHistory.cs" />
+    <Compile Include="DAL\AccountType.cs" />
+    <Compile Include="DAL\AccountTypeHistory.cs" />
+    <Compile Include="DAL\Allocation.cs" />
+    <Compile Include="DAL\AllocationData.cs" />
+    <Compile Include="DAL\AllocationDataHistory.cs" />
+    <Compile Include="DAL\AllocationHistory.cs" />
+    <Compile Include="DAL\AllocationType.cs" />
+    <Compile Include="DAL\AllocationTypeAccount.cs" />
+    <Compile Include="DAL\AllocationTypeAccountHistory.cs" />
+    <Compile Include="DAL\AllocationTypeField.cs" />
+    <Compile Include="DAL\AllocationTypeFieldHistory.cs" />
+    <Compile Include="DAL\AllocationTypeHistory.cs" />
+    <Compile Include="DAL\Bill.cs" />
+    <Compile Include="DAL\BillFrequency.cs" />
+    <Compile Include="DAL\BillFrequencyHistory.cs" />
+    <Compile Include="DAL\BillHistory.cs" />
+    <Compile Include="DAL\CheckbookEntities.cs" />
+    <Compile Include="DAL\DataType.cs" />
+    <Compile Include="DAL\DataTypeHistory.cs" />
+    <Compile Include="DAL\Fund.cs" />
+    <Compile Include="DAL\FundBudget.cs" />
+    <Compile Include="DAL\FundBudgetHistory.cs" />
+    <Compile Include="DAL\FundHistory.cs" />
+    <Compile Include="DAL\FundType.cs" />
+    <Compile Include="DAL\FundTypeHistory.cs" />
+    <Compile Include="DAL\Transaction.cs" />
+    <Compile Include="DAL\TransactionHistory.cs" />
+    <Compile Include="DAL\User.cs" />
+    <Compile Include="DAL\UserAccount.cs" />
+    <Compile Include="DAL\UserAccountHistory.cs" />
+    <Compile Include="DAL\UserFund.cs" />
+    <Compile Include="DAL\UserFundHistory.cs" />
+    <Compile Include="DAL\UserHistory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Creelio.Framework\Creelio.Framework\Creelio.Framework.csproj">
+      <Project>{E55167AB-5744-4577-8A2E-BC8D474D3B34}</Project>
+      <Name>Creelio.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

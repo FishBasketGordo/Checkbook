@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkbook.Web", "Checkbook.Web\Checkbook.Web.csproj", "{4F60793C-AF5E-4F11-8AE3-F9448D0CCB41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkbook.Tests", "Checkbook.Tests\Checkbook.Tests.csproj", "{422F4077-D337-4D82-8DE6-7F83CD99541B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkbook.Framework", "Checkbook.Framework\Checkbook.Framework.csproj", "{A9F34985-099F-4B2F-8714-39C5A502582C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Creelio.Framework", "..\..\Creelio.Framework\Creelio.Framework\Creelio.Framework.csproj", "{E55167AB-5744-4577-8A2E-BC8D474D3B34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F60793C-AF5E-4F11-8AE3-F9448D0CCB41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F60793C-AF5E-4F11-8AE3-F9448D0CCB41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F60793C-AF5E-4F11-8AE3-F9448D0CCB41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F60793C-AF5E-4F11-8AE3-F9448D0CCB41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{422F4077-D337-4D82-8DE6-7F83CD99541B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422F4077-D337-4D82-8DE6-7F83CD99541B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422F4077-D337-4D82-8DE6-7F83CD99541B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422F4077-D337-4D82-8DE6-7F83CD99541B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9F34985-099F-4B2F-8714-39C5A502582C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F34985-099F-4B2F-8714-39C5A502582C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9F34985-099F-4B2F-8714-39C5A502582C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9F34985-099F-4B2F-8714-39C5A502582C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E55167AB-5744-4577-8A2E-BC8D474D3B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E55167AB-5744-4577-8A2E-BC8D474D3B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E55167AB-5744-4577-8A2E-BC8D474D3B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E55167AB-5744-4577-8A2E-BC8D474D3B34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
